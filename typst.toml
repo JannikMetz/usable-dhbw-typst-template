@@ -1,11 +1,11 @@
 [package]
-name = "clean-dhbw"
-version = "0.3.1"
+name = "usable-dhbw"
+version = "0.0.1"
 entrypoint = "lib.typ"
-authors = ["Roland Schätzle <@roland-KA>"]
+authors = ["Jannik Metz <@JannikMetz>"]
 license = "MIT"
-description = "A Typst Template for DHBW"
-repository = "https://github.com/roland-KA/clean-dhbw-typst-template"
+description = "A unofficial Typst Template for DHBW"
+repository = "https://github.com/JannikMetz/usable-dhbw-typst-template"
 keywords = ["dhbw", "thesis"]
 categories = ["paper", "thesis", "report"]
 exclude = ["template/main.pdf"]

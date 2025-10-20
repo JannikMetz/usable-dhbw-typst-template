@@ -6,11 +6,12 @@
 #import "confidentiality-statement.typ": *
 #import "declaration-of-authorship.typ": *
 #import "check-attributes.typ": *
+#import "@preview/acrotastic:0.1.1"
 
 // Workaround for the lack of an `std` scope.
 #let std-bibliography = bibliography
 
-#let clean-dhbw(
+#let usable-dhbw(
   title: none,
   authors: (:),
   language: none,
@@ -284,6 +285,12 @@
   in-body.update(false)
   set heading(numbering: "A.1")
   counter(heading).update(0)
+
+  // ---------- List of Acronyms ---------------------------------------
+
+  if (acronyms != none) {
+    print-index()
+  }
 
   // ---------- Bibliography ---------------------------------------
 
